@@ -9,3 +9,5 @@ RUN tar -xzf go$GOLANG_VERSION.linux-amd64.tar.gz
 RUN rm go$GOLANG_VERSION.linux-amd64.tar.gz
 ENV GOROOT=/go
 ENV PATH=/go/bin:$PATH
+
+ENTRYPOINT /bin/bash
